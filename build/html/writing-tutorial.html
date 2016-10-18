@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Writing ‘tutorial.rst’ &#8212; Igeek 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Igeek 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="Writing ‘guide.rst’" href="writing-guide.html" />
+    <link rel="prev" title="Writing ‘api.rst’" href="writing-api.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="writing-guide.html" title="Writing ‘guide.rst’"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="writing-api.html" title="Writing ‘api.rst’"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Igeek 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="writing-tutorial-rst">
+<h1>Writing ‘tutorial.rst’<a class="headerlink" href="#writing-tutorial-rst" title="Permalink to this headline">¶</a></h1>
+<p>Having written our low-level API documentation,
+we are now going to turn to the first thing a new user reads:
+your tutorial!</p>
+<p>The tutorial is short to keep this tutorial from going too long,
+but it does try to both serve the real purpose of a tutorial,
+which is to show users how to get started with your library,
+and it also should help you practice reStructuredText.</p>
+<p>Remember to add your tutorial document&#8217;s filename
+to the table of contents in your <code class="docutils literal"><span class="pre">index.rst</span></code> file!</p>
+<p>While plain <code class="docutils literal"><span class="pre">names</span></code> and <code class="docutils literal"><span class="pre">attributes</span></code> are simply
+displayed in a typewriter font, <code class="docutils literal"><span class="pre">functions()</span></code> and <code class="docutils literal"><span class="pre">methods()</span></code>
+should be followed by a pair of parenthesis to make them look right.</p>
+<p>Your task is to make the tutorial&#8217;s text look as pretty
+as it does in the printed copy here in this handout.
+Here are some bonus goals if you finish early:</p>
+<ol class="arabic">
+<li><p class="first">Do you know whether the sample program really works?
+Add a deliberate mistake to it and try running <code class="docutils literal"><span class="pre">make</span></code> <code class="docutils literal"><span class="pre">doctest</span></code>
+to see if you really get presented with an error.
+If no error appears, then consult the previous <a class="reference internal" href="quick-sphinx.html"><span class="doc">Sphinx Quick Reference</span></a>
+chapter and try to figure out how to mark up the code and output
+so that they get tested.</p>
+</li>
+<li><p class="first">Whenever a module, class, or function is mentioned
+in the text, you should mark it to create a cross-reference
+into the API document you have already written.
+Try out the following two styles of cross-reference
+and see what difference they make in your formatted output:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>the :class:`trianglelib.shape.Triangle` class
+the :class:`~trianglelib.shape.Triangle` class
+</pre></div>
+</div>
+</li>
+<li><p class="first">If you managed to get the quote from Euclid to appear
+at the top of your tutorial, how might you make it appear
+in the index under the entry “Euclid”?</p>
+</li>
+<li><p class="first">In the sentence “Read <em>The trianglelib guide</em> to learn more”,
+we want the phrase “The trianglelib guide” to become
+an actual hyperlink to the guide itself.
+Create a nearly empty <code class="docutils literal"><span class="pre">guide.rst</span></code> document that consists
+of just an underlined title for right now,
+add it to your table of contents,
+and see whether you can make the cross reference a clickable link.</p>
+</li>
+</ol>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="writing-api.html"
+                        title="previous chapter">Writing ‘api.rst’</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="writing-guide.html"
+                        title="next chapter">Writing ‘guide.rst’</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/writing-tutorial.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="writing-guide.html" title="Writing ‘guide.rst’"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="writing-api.html" title="Writing ‘api.rst’"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Igeek 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Daemon wang.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

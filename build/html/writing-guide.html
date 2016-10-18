@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Writing ‘guide.rst’ &#8212; Igeek 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Igeek 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="Example: tutorial.rst — The trianglelib tutorial" href="tutorial.html" />
+    <link rel="prev" title="Writing ‘tutorial.rst’" href="writing-tutorial.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Example: tutorial.rst — The trianglelib tutorial"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="writing-tutorial.html" title="Writing ‘tutorial.rst’"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Igeek 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="writing-guide-rst">
+<h1>Writing ‘guide.rst’<a class="headerlink" href="#writing-guide-rst" title="Permalink to this headline">¶</a></h1>
+<p>Given how much markup you have already learned,
+you will probably find marking up the Guide
+to be a more modest challenge than those you have enjoyed so far.
+Once you have it marked up and looking good,
+here is a list of bonus challenges you might try out:</p>
+<ol class="arabic simple">
+<li>Make all of the references to function, class, and method names
+turn into real hyperlinks into the API chapter.</li>
+<li>In accomplishing the first goal,
+you probably had to use the package name <code class="docutils literal"><span class="pre">trianglelib</span></code>
+quite a lot, which involves a quite depressing amount of repetition.
+While you cannot use the <code class="docutils literal"><span class="pre">module::</span></code> directive here,
+since this is not the API documentation, try using the directive
+<code class="docutils literal"><span class="pre">currentmodule::</span></code> <code class="docutils literal"><span class="pre">trianglelib</span></code> at the top of the Guide
+and verify that you can then remove the module name
+from the beginning of all of your cross references.</li>
+<li>Are the doctests in the guide really running
+every time you type <code class="docutils literal"><span class="pre">make</span></code> <code class="docutils literal"><span class="pre">doctest</span></code>?
+Try ending the paragraph that precedes them with <code class="docutils literal"><span class="pre">:</span></code>
+and then with <code class="docutils literal"><span class="pre">::</span></code> and observe the difference in results.</li>
+<li>Note the three periods that form an ellipsis <code class="docutils literal"><span class="pre">&quot;...&quot;</span></code>
+in the traceback shown in the guide.
+This is a standard established long ago
+by the Python Standard Library&#8217;s doctest module
+that lets you avoid including the whole ugly traceback —
+which you would then have to edit and correct
+every time a line number changed in one of your source files!
+Try removing the ellipsis to confirm that <code class="docutils literal"><span class="pre">make</span></code> <code class="docutils literal"><span class="pre">doctest</span></code>
+indeed fails if it is asked to literally match
+the contents of the traceback.</li>
+<li>I have grown to dislike doctests more and more over the years,
+most recently because users cannot easily cut-and-paste doctest code
+into their own programs without then having to manually backspace
+over all of the <code class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></code> prompts that get pasted in with the code.
+Convert the example in the <a class="reference internal" href="guide.html#triangle-dimensions"><span class="std std-ref">Triangle dimensions</span></a> section
+into a <code class="docutils literal"><span class="pre">testcode::</span></code> block and a <code class="docutils literal"><span class="pre">testoutput::</span></code> block instead,
+and confirm that the block is getting detected, executed, and
+tested when you run <code class="docutils literal"><span class="pre">make</span></code> <code class="docutils literal"><span class="pre">doctest</span></code>.</li>
+<li>If you are able to access the Sphinx documentation
+during the tutorial, look up the <code class="docutils literal"><span class="pre">math</span></code> Sphinx extension
+and try to figure out how I made the inequality equation
+so very pretty.
+As a super bonus, see if you can replace the inequality
+with this equivalent expression:</li>
+</ol>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="writing-tutorial.html"
+                        title="previous chapter">Writing ‘tutorial.rst’</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tutorial.html"
+                        title="next chapter">Example: tutorial.rst — The trianglelib tutorial</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/writing-guide.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Example: tutorial.rst — The trianglelib tutorial"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="writing-tutorial.html" title="Writing ‘tutorial.rst’"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Igeek 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Daemon wang.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

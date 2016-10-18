@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sphinx Quick Reference &#8212; Igeek 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Igeek 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="Writing ‘api.rst’" href="writing-api.html" />
+    <link rel="prev" title="RST Quick Reference" href="quick-rst.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="writing-api.html" title="Writing ‘api.rst’"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="quick-rst.html" title="RST Quick Reference"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Igeek 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="sphinx-quick-reference">
+<h1>Sphinx Quick Reference<a class="headerlink" href="#sphinx-quick-reference" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default"><div class="highlight"><pre><span></span>.. note::
+
+   Your note should consist of one or more paragraphs, all indented
+   so that they clearly belong to the note and not to the text or
+   directive that follows.
+
+   Many other directives are also supported, including: warning,
+   versionadded, versionchanged, seealso, deprecated, rubric,
+   centered, hlist, glossary, productionlist.
+
+.. code-block:: c
+
+   /* Or say &quot;highlight::&quot; once to set the language for all of the
+      code blocks that follow it.  Options include &quot;:linenos:&quot;,
+      &quot;:linenothreshold:&quot;, and &quot;:emphasize-lines: 1,2,3&quot;. */
+
+   char s[] = &quot;You can also say &#39;python&#39;, &#39;ruby&#39;, ..., or &#39;guess&#39;!&quot;;
+
+.. literalinclude:: example.py
+   :lines: 10-20
+   :emphasize-lines: 15,16
+
+.. module:: httplib
+
+.. class:: Request
+
+   Zero or more paragraphs of introductory material for the class.
+
+   .. method:: send()
+
+      Description of the send() method.
+
+   .. attribute:: url
+
+      Description of the url attribute.
+
+   Many more members are possible than just method and attribute,
+   and non-Python languages are supported too; see the Sphinx docs
+   for more possibilities!
+
+.. testcode::
+
+   print &#39;The doctest extension supports code without &gt;&gt;&gt; prompts!&#39;
+
+.. testoutput::
+
+   The doctest extension supports code without &gt;&gt;&gt; prompts!
+
+.. _custom-label:
+.. index:: single: paragraph, targeted paragraph, indexed paragraph
+
+This paragraph can be targeted with :ref:`custom-label`, and will also
+be the :index:`target` of several index entries!
+
+.. index:: pair: copper, wire
+
+This paragraph will be listed in the index under both “wire, copper”
+and “copper, wire.”  See the Sphinx documentation for even more complex
+ways of building index entries.
+
+Many kinds of cross-reference can be used inside of a paragraph:
+
+:ref:`custom-label`             :class:`~module.class`
+:doc:`quick-sphinx`             :method:`~module.class.method()`
+:mod:`module`                   :attr: `~module.class.attribute`
+
+(See the Sphinx “Inline Markup” chapter for MANY more examples!)
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="quick-rst.html"
+                        title="previous chapter">RST Quick Reference</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="writing-api.html"
+                        title="next chapter">Writing ‘api.rst’</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/quick-sphinx.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="writing-api.html" title="Writing ‘api.rst’"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="quick-rst.html" title="RST Quick Reference"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Igeek 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Daemon wang.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>
