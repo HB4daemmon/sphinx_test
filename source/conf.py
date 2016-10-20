@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Igeek documentation build configuration file, created by
+# iGeek documentation build configuration file, created by
 # sphinx-quickstart on Tue Oct 18 14:00:07 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Igeek'
+project = 'iGeek'
 copyright = '2016, Daemon wang'
 author = 'Daemon wang'
 
@@ -135,7 +135,7 @@ html_theme_path = ["_themes",]
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = 'Igeek v0.0.1'
+# html_title = 'iGeek v0.0.1'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -235,7 +235,7 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Igeekdoc'
+htmlhelp_basename = 'iGeekdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -261,7 +261,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Igeek.tex', 'Igeek Documentation',
+    (master_doc, 'iGeek.tex', 'iGeek Documentation',
      'Daemon wang', 'manual'),
 ]
 
@@ -303,7 +303,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'igeek', 'Igeek Documentation',
+    (master_doc, 'iGeek', 'iGeek Documentation',
      [author], 1)
 ]
 
@@ -318,8 +318,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Igeek', 'Igeek Documentation',
-     author, 'Igeek', 'One line description of project.',
+    (master_doc, 'iGeek', 'iGeek Documentation',
+     author, 'iGeek', 'One line description of project.',
      'Miscellaneous'),
 ]
 

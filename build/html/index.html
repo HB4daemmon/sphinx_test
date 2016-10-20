@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to the Sphinx Tutorial! &mdash; Igeek 0.0.1 documentation</title>
+  <title>iGeek API Document &mdash; iGeek 0.0.1 documentation</title>
   
 
   
@@ -33,8 +33,8 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Igeek 0.0.1 documentation" href="#"/>
-        <link rel="next" title="Notes on Using Sphinx" href="using-sphinx.html"/> 
+    <link rel="top" title="iGeek 0.0.1 documentation" href="#"/>
+        <link rel="next" title="Base — 基本接口规范" href="base.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> Igeek
+            <a href="#" class="icon icon-home"> iGeek
           
 
           
@@ -84,15 +84,7 @@
             
             
                 <ul>
-<li class="toctree-l1"><a class="reference internal" href="using-sphinx.html">Notes on Using Sphinx</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick-rst.html">RST Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick-sphinx.html">Sphinx Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="writing-api.html">Writing ‘api.rst’</a></li>
-<li class="toctree-l1"><a class="reference internal" href="writing-tutorial.html">Writing ‘tutorial.rst’</a></li>
-<li class="toctree-l1"><a class="reference internal" href="writing-guide.html">Writing ‘guide.rst’</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Example: tutorial.rst — The trianglelib tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="guide.html">Example: guide.rst — The trianglelib guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Example: api.rst — The trianglelib API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="base.html">Base — 基本接口规范</a></li>
 </ul>
 
             
@@ -106,7 +98,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="#">Igeek</a>
+        <a href="#">iGeek</a>
       </nav>
 
 
@@ -123,7 +115,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="#">Docs</a> &raquo;</li>
       
-    <li>Welcome to the Sphinx Tutorial!</li>
+    <li>iGeek API Document</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -137,53 +129,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-the-sphinx-tutorial">
-<h1>Welcome to the Sphinx Tutorial!<a class="headerlink" href="#welcome-to-the-sphinx-tutorial" title="Permalink to this headline">¶</a></h1>
-<div class="line-block">
-<div class="line">PyCon 2013</div>
-<div class="line">San Jose, California</div>
-<div class="line">Thursday morning</div>
-<div class="line">March 14th</div>
-</div>
-<div class="highlight-default"><div class="highlight"><pre><span></span> 9:00pm – 10:30pm   First Half of Tutorial
-                    Break (refreshments served)
-10:50pm – 12:20pm   Conclusion of Tutorial
-</pre></div>
-</div>
-<p>Welcome to my Sphinx tutorial,
-which is now in its fourth year at PyCon.
-Sphinx has come a long way since this tutorial was first offered
-back on a cold February day in 2010,
-when the most recent version available was 0.6.4.
-Sphinx has now reached 1.1.3,
-and I&nbsp;have worked to keep this tutorial up to date
-with all of the most recent features in Sphinx.
-I hope you enjoy it with me!</p>
+  <div class="section" id="igeek-api-document">
+<h1>iGeek API Document<a class="headerlink" href="#igeek-api-document" title="Permalink to this headline">¶</a></h1>
+<p>iGeek 接口技术文档</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="using-sphinx.html">Notes on Using Sphinx</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="using-sphinx.html#starting-a-sphinx-project">Starting a Sphinx project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="using-sphinx.html#sphinx-layout">Sphinx layout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="using-sphinx.html#hints">Hints</a></li>
-<li class="toctree-l2"><a class="reference internal" href="using-sphinx.html#helping-autodoc-find-your-package">Helping autodoc find your package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="using-sphinx.html#deployment">Deployment</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="quick-rst.html">RST Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick-sphinx.html">Sphinx Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="writing-api.html">Writing ‘api.rst’</a></li>
-<li class="toctree-l1"><a class="reference internal" href="writing-tutorial.html">Writing ‘tutorial.rst’</a></li>
-<li class="toctree-l1"><a class="reference internal" href="writing-guide.html">Writing ‘guide.rst’</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Example: tutorial.rst — The trianglelib tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="guide.html">Example: guide.rst — The trianglelib guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="guide.html#special-triangles">Special triangles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="guide.html#triangle-dimensions">Triangle dimensions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="guide.html#valid-triangles">Valid triangles</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Example: api.rst — The trianglelib API reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api.html#module-trianglelib.shape">The “shape” module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#module-trianglelib.utils">The “utils” module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="base.html">Base — 基本接口规范</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="base.html#query">Query - 基本查询规范</a></li>
+<li class="toctree-l2"><a class="reference internal" href="base.html#id1">Query - 高级查询规范</a></li>
 </ul>
 </li>
 </ul>
@@ -197,7 +150,7 @@ I hope you enjoy it with me!</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="using-sphinx.html" class="btn btn-neutral float-right" title="Notes on Using Sphinx" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="base.html" class="btn btn-neutral float-right" title="Base — 基本接口规范" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
